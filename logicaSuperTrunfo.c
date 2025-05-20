@@ -26,11 +26,10 @@ int main() {
     printf("Digite o número de pontos turísticos da cidade 1: ");
     scanf("%d", &pontosTuristicos1);
 
-    // Cadastro da cidade 2
     printf("\nDigite o código da cidade 2: ");
     scanf("%s", codigo2);
     printf("Digite o nome da cidade 2: ");
-    scanf(" %[^\n]", cidade2);
+    scanf("%s", cidade2);
     printf("Digite o estado da cidade 2 (sigla): ");
     scanf("%s", estado2);
     printf("Digite a população da cidade 2: ");
@@ -42,14 +41,12 @@ int main() {
     printf("Digite o número de pontos turísticos da cidade 2: ");
     scanf("%d", &pontosTuristicos2);
 
-    // Cálculo densidade e PIB per capita
     densidade1 = populacao1 / area1;
     pibPerCapita1 = pib1 / populacao1;
 
     densidade2 = populacao2 / area2;
     pibPerCapita2 = pib2 / populacao2;
 
-    // Exibindo dados das cidades
     printf("\n=== Dados das Cidades ===\n");
 
     printf("\nCidade 1: %s (%s)\n", cidade1, estado1);
@@ -66,7 +63,6 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per capita: %.6f\n", pibPerCapita2);
 
-    // Comparação (atributo escolhido: População)
     printf("\n>>> Comparação de Cartas (Atributo: População)\n");
     printf("%s: %d habitantes\n", cidade1, populacao1);
     printf("%s: %d habitantes\n", cidade2, populacao2);
